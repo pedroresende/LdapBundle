@@ -4,11 +4,11 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="imag_ldap.security.user.provider.class">IMAG\LdapBundle\Provider\LdapUserProvider</parameter>
-    <parameter key="imag_ldap.ldap_connection.class">IMAG\LdapBundle\Manager\LdapConnection</parameter>
-    <parameter key="imag_ldap.ldap_manager.class">IMAG\LdapBundle\Manager\LdapManagerUser</parameter>
-    <parameter key="imag_ldap.security.authentication.provider.class">IMAG\LdapBundle\Provider\LdapAuthenticationProvider</parameter>
-    <parameter key="imag_ldap.security.authentication.listener.class">IMAG\LdapBundle\EventListener\LdapListener</parameter>
+    <parameter key="imag_ldap.security.user.provider.class">PEDRORESENDE\LdapBundle\Provider\LdapUserProvider</parameter>
+    <parameter key="imag_ldap.ldap_connection.class">PEDRORESENDE\LdapBundle\Manager\LdapConnection</parameter>
+    <parameter key="imag_ldap.ldap_manager.class">PEDRORESENDE\LdapBundle\Manager\LdapManagerUser</parameter>
+    <parameter key="imag_ldap.security.authentication.provider.class">PEDRORESENDE\LdapBundle\Provider\LdapAuthenticationProvider</parameter>
+    <parameter key="imag_ldap.security.authentication.listener.class">PEDRORESENDE\LdapBundle\EventListener\LdapListener</parameter>
     <parameter key="imag_ldap.security.authentication.form_entry_point.class">Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint</parameter>
   </parameters>
 

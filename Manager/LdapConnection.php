@@ -1,10 +1,10 @@
 <?php
 
-namespace IMAG\LdapBundle\Manager;
+namespace PEDRORESENDE\LdapBundle\Manager;
 
 use Monolog\Logger;
 
-use IMAG\LdapBundle\Exception\ConnectionException;
+use PEDRORESENDE\LdapBundle\Exception\ConnectionException;
 
 class LdapConnection implements LdapConnectionInterface
 {
@@ -64,7 +64,7 @@ class LdapConnection implements LdapConnectionInterface
 
     /**
      * @return true
-     * @throws \IMAG\LdapBundle\Exceptions\ConnectionException | Connection error
+     * @throws \PEDRORESENDE\LdapBundle\Exceptions\ConnectionException | Connection error
      */
     public function bind($user_dn, $password = '', $ress = null)
     {
@@ -173,7 +173,7 @@ class LdapConnection implements LdapConnectionInterface
     /**
      * Checks if there were an error during last ldap call
      *
-     * @throws \IMAG\LdapBundle\Exception\ConnectionException
+     * @throws \PEDRORESENDE\LdapBundle\Exception\ConnectionException
      */
     private function checkLdapError($ress = null)
     {

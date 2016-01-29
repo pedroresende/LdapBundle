@@ -1,13 +1,13 @@
 <?php
 
-namespace IMAG\LdapBundle\DependencyInjection;
+namespace PEDRORESENDE\LdapBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension,
     Symfony\Component\DependencyInjection\ContainerBuilder,
     Symfony\Component\DependencyInjection\Loader\XmlFileLoader,
     Symfony\Component\Config\FileLocator;
 
-class IMAGLdapExtension extends Extension
+class PEDRORESENDELdapExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {

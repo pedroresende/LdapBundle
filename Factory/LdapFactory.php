@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\Factory;
+namespace PEDRORESENDE\LdapBundle\Factory;
 
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\AbstractFactory,
     Symfony\Component\DependencyInjection\ContainerBuilder,

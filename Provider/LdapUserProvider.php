@@ -1,14 +1,14 @@
 <?php
 
-namespace IMAG\LdapBundle\Provider;
+namespace PEDRORESENDE\LdapBundle\Provider;
 
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException,
     Symfony\Component\Security\Core\Exception\UsernameNotFoundException,
     Symfony\Component\Security\Core\User\UserInterface,
     Symfony\Component\Security\Core\User\UserProviderInterface;
 
-use IMAG\LdapBundle\Manager\LdapManagerUserInterface,
-    IMAG\LdapBundle\User\LdapUserInterface;
+use PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface,
+    PEDRORESENDE\LdapBundle\User\LdapUserInterface;
 
 /**
  * LDAP User Provider
@@ -19,7 +19,7 @@ use IMAG\LdapBundle\Manager\LdapManagerUserInterface,
 class LdapUserProvider implements UserProviderInterface
 {
     /**
-     * @var \IMAG\LdapBundle\Manager\LdapManagerUserInterface
+     * @var \PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface
      */
     private $ldapManager;
 
@@ -37,7 +37,7 @@ class LdapUserProvider implements UserProviderInterface
     /**
      * Constructor
      *
-     * @param \IMAG\LdapBundle\Manager\LdapManagerUserInterface $ldapManager
+     * @param \PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface $ldapManager
      * @param bool|string                                       $bindUsernameBefore
      * @param string                                            $userClass
      */
@@ -88,7 +88,7 @@ class LdapUserProvider implements UserProviderInterface
      */
     public function supportsClass($class)
     {
-        return is_subclass_of($class, '\IMAG\LdapBundle\User\LdapUserInterface');
+        return is_subclass_of($class, '\PEDRORESENDE\LdapBundle\User\LdapUserInterface');
     }
 
     private function simpleUser($username)

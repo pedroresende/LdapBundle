@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\Event;
+namespace PEDRORESENDE\LdapBundle\Event;
 
 final class LdapEvents
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\EventListener;
+namespace PEDRORESENDE\LdapBundle\EventListener;
 
 use Symfony\Component\EventDispatcher\EventDispatcherInterface,
     Symfony\Component\Form\Extension\Csrf\CsrfProvider\CsrfProviderInterface,

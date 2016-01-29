@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\Exception;
+namespace PEDRORESENDE\LdapBundle\Exception;
 
 /**
  * @author Juti Noppornpitak <jutin@nationalfibre.net>

@@ -1,12 +1,12 @@
 <?php
 
-namespace IMAG\LdapBundle\Event;
+namespace PEDRORESENDE\LdapBundle\Event;
 
 use Symfony\Component\EventDispatcher\Event;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 
-use IMAG\LdapBundle\User\LdapUserInterface;
+use PEDRORESENDE\LdapBundle\User\LdapUserInterface;
 
 class LdapUserEvent extends Event
 {

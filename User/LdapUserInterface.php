@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\User;
+namespace PEDRORESENDE\LdapBundle\User;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\EquatableInterface;

@@ -1,8 +1,8 @@
 <?php
 
-namespace IMAG\LdapBundle\Provider;
+namespace PEDRORESENDE\LdapBundle\Provider;
 
-use IMAG\LdapBundle\Exception\ConnectionException;
+use PEDRORESENDE\LdapBundle\Exception\ConnectionException;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -13,10 +13,10 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
-use IMAG\LdapBundle\Manager\LdapManagerUserInterface;
-use IMAG\LdapBundle\Event\LdapUserEvent;
-use IMAG\LdapBundle\Event\LdapEvents;
-use IMAG\LdapBundle\User\LdapUserInterface;
+use PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface;
+use PEDRORESENDE\LdapBundle\Event\LdapUserEvent;
+use PEDRORESENDE\LdapBundle\Event\LdapEvents;
+use PEDRORESENDE\LdapBundle\User\LdapUserInterface;
 
 class LdapAuthenticationProvider implements AuthenticationProviderInterface
 {
@@ -92,7 +92,7 @@ class LdapAuthenticationProvider implements AuthenticationProviderInterface
     /**
      * Authentication logic to allow Ldap user
      *
-     * @param \IMAG\LdapBundle\User\LdapUserInterface  $user
+     * @param \PEDRORESENDE\LdapBundle\User\LdapUserInterface  $user
      * @param TokenInterface $token
      *
      * @return \Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken $token
@@ -139,7 +139,7 @@ class LdapAuthenticationProvider implements AuthenticationProviderInterface
     /**
      * Authenticate the user with LDAP bind.
      *
-     * @param \IMAG\LdapBundle\User\LdapUserInterface  $user
+     * @param \PEDRORESENDE\LdapBundle\User\LdapUserInterface  $user
      * @param TokenInterface $token
      *
      * @return true
@@ -158,8 +158,8 @@ class LdapAuthenticationProvider implements AuthenticationProviderInterface
     /**
      * Reload user with the username
      *
-     * @param \IMAG\LdapBundle\User\LdapUserInterface $user
-     * @return \IMAG\LdapBundle\User\LdapUserInterface $user
+     * @param \PEDRORESENDE\LdapBundle\User\LdapUserInterface $user
+     * @return \PEDRORESENDE\LdapBundle\User\LdapUserInterface $user
      */
     private function reloadUser(LdapUserInterface $user)
     {

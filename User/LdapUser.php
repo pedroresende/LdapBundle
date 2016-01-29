@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\User;
+namespace PEDRORESENDE\LdapBundle\User;
 
 class LdapUser implements LdapUserInterface
 {

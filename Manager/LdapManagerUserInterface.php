@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\Manager;
+namespace PEDRORESENDE\LdapBundle\Manager;
 
 interface LdapManagerUserInterface
 {

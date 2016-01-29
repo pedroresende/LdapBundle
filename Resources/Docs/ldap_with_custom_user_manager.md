@@ -22,7 +22,7 @@ namespace Acme\DemoBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
-use IMAG\LdapBundle\User\LdapUserInterface;
+use PEDRORESENDE\LdapBundle\User\LdapUserInterface;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -190,14 +190,14 @@ use Symfony\Component\Security\Core\Exception\UsernameNotFoundException,
     Symfony\Component\Security\Core\User\UserInterface,
     Symfony\Component\DependencyInjection\ContainerInterface;
 
-use IMAG\LdapBundle\Manager\LdapManagerUserInterface,
-    IMAG\LdapBundle\User\LdapUserInterface;
+use PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface,
+    PEDRORESENDE\LdapBundle\User\LdapUserInterface;
 use FOS\UserBundle\Model\UserManagerInterface;
 
 class LdapUserProvider implements UserProviderInterface
 {
     /**
-     * @var \IMAG\LdapBundle\Manager\LdapManagerUserInterface
+     * @var \PEDRORESENDE\LdapBundle\Manager\LdapManagerUserInterface
      */
     private $ldapManager;
 

@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace IMAG\LdapBundle;
+namespace PEDRORESENDE\LdapBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-use IMAG\LdapBundle\Factory\LdapFactory;
+use PEDRORESENDE\LdapBundle\Factory\LdapFactory;
 
 /**
  * LDAP Bundle
@@ -22,7 +22,7 @@ use IMAG\LdapBundle\Factory\LdapFactory;
  * @author Boris Morel
  * @author Juti Noppornpitak <jnopporn@shiroyuki.com>
  */
-class IMAGLdapBundle extends Bundle
+class PEDRORESENDEdapBundle extends Bundle
 {
     public function boot()
     {

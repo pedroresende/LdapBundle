@@ -18,7 +18,7 @@ security:
             id: imag_ldap.security.user.provider
 
     encoders:
-        IMAG\LdapBundle\User\LdapUser: plaintext
+        PEDRORESENDE\LdapBundle\User\LdapUser: plaintext
 
     access_control:
         - { path: ^/login,          roles: IS_AUTHENTICATED_ANONYMOUSLY }
@@ -49,4 +49,4 @@ imag_ldap:
     user_attribute: member
 #    user_id: [ dn or username ] #Default dn
 
-#  user_class: IMAG\LdapBundle\User\LdapUser
+#  user_class: PEDRORESENDE\LdapBundle\User\LdapUser

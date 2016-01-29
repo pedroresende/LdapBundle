@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace IMAG\LdapBundle\Controller;
+namespace PEDRORESENDE\LdapBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

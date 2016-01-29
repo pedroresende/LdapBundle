@@ -1,10 +1,10 @@
 <?php
 
-namespace IMAG\LdapBundle\Manager;
+namespace PEDRORESENDE\LdapBundle\Manager;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
-use IMAG\LdapBundle\Exception\ConnectionException;
+use PEDRORESENDE\LdapBundle\Exception\ConnectionException;
 
 class LdapManagerUser implements LdapManagerUserInterface
 {
@@ -155,7 +155,7 @@ class LdapManagerUser implements LdapManagerUserInterface
      * @return mixed $this
      * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException | Username not found
      * @throws \RuntimeException | Inconsistent Fails
-     * @throws \IMAG\LdapBundle\Exception\ConnectionException | Connection error
+     * @throws \PEDRORESENDE\LdapBundle\Exception\ConnectionException | Connection error
      */
     private function addLdapUser()
     {
@@ -194,7 +194,7 @@ class LdapManagerUser implements LdapManagerUserInterface
      * @return mixed $this
      * @throws \RuntimeException | Inconsistent Fails
      * @throws \InvalidArgumentException | Configuration exception
-     * @throws \IMAG\LdapBundle\Exception\ConnectionException | Connection error
+     * @throws \PEDRORESENDE\LdapBundle\Exception\ConnectionException | Connection error
      */
     private function addLdapRoles()
     {

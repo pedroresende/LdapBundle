@@ -26,7 +26,7 @@ Add LdapBundle in your project's `composer.json`
 ```json
 {
     "require": {
-        "imag/ldap-bundle": "dev-master"
+        "pedroresende/ldap-bundle": "dev-master"
     }
 }
 ```
@@ -41,7 +41,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new IMAG\LdapBundle\IMAGLdapBundle(),
+        new PEDRORESENDE\LdapBundle\IMAGLdapBundle(),
     );
 }
 ```
@@ -52,7 +52,7 @@ public function registerBundles()
 > An example `security.yml` file is located within the bundle at `./Resources/Docs/security.yml`
 
 ``` yaml
-# ./IMAG/LdapBundle/Resources/config/security.yml
+# ./PEDRORESENDE/LdapBundle/Resources/config/security.yml
 
 security:
   firewalls:
@@ -73,7 +73,7 @@ security:
       id: imag_ldap.security.user.provider
                 
   encoders:
-    IMAG\LdapBundle\User\LdapUser: plaintext
+    PEDRORESENDE\LdapBundle\User\LdapUser: plaintext
 
   access_control:
     - { path: ^/login,          roles: IS_AUTHENTICATED_ANONYMOUSLY }
@@ -102,7 +102,7 @@ imag_ldap:
     user_attribute: member
     user_id: [ dn or username ]
     
-#  user_class: IMAG\LdapBundle\User\LdapUser # Optional
+#  user_class: PEDRORESENDE\LdapBundle\User\LdapUser # Optional
 ```
 
 **You should configure the parameters under the `imag_ldap` section to match your environment.**
@@ -127,7 +127,7 @@ imag_ldap:
 # app/config/routing.yml
 
 imag_ldap:
-  resource: "@IMAGLdapBundle/Resources/config/routing.yml"
+  resource: "@PEDRORESENDELdapBundle/Resources/config/routing.yml"
 ```
 
 ### Implement Logout
@@ -197,7 +197,7 @@ Example:
 namespace Acme\HelloBundle\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use IMAG\LdapBundle\Event\LdapUserEvent;
+use PEDRORESENDE\LdapBundle\Event\LdapUserEvent;
 
 /**
  * Performs logic before the user is found to LDAP
@@ -207,14 +207,14 @@ class LdapSecuritySubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return array(
-            \IMAG\LdapBundle\Event\LdapEvents::PRE_BIND => 'onPreBind',
+            \PEDRORESENDE\LdapBundle\Event\LdapEvents::PRE_BIND => 'onPreBind',
         );
     }
 
     /**
      * Modifies the User before binding data from LDAP
      *
-     * @param \IMAG\LdapBundle\Event\LdapUserEvent $event
+     * @param \PEDRORESENDE\LdapBundle\Event\LdapUserEvent $event
      */
     public function onPreBind(LdapUserEvent $event)
     {

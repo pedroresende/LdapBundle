@@ -1,6 +1,6 @@
 <?php
 
-namespace IMAG\LdapBundle\DependencyInjection;
+namespace PEDRORESENDE\LdapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\ConfigurationInterface,
   Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -17,7 +17,7 @@ class Configuration implements ConfigurationInterface
             ->append($this->addUserNode())
             ->append($this->addRoleNode())
             ->scalarNode('user_class')
-              ->defaultValue("IMAG\LdapBundle\User\LdapUser")
+              ->defaultValue("PEDRORESENDE\LdapBundle\User\LdapUser")
             ->end()
         ->end()
         ;
