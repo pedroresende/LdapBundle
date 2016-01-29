@@ -41,7 +41,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new PEDRORESENDE\LdapBundle\IMAGLdapBundle(),
+        new PEDRORESENDE\LdapBundle\PEDRORESENDELdapBundle(),
     );
 }
 ```

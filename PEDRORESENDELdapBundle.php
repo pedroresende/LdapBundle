@@ -22,7 +22,7 @@ use PEDRORESENDE\LdapBundle\Factory\LdapFactory;
  * @author Boris Morel
  * @author Juti Noppornpitak <jnopporn@shiroyuki.com>
  */
-class PEDRORESENDEdapBundle extends Bundle
+class PEDRORESENDELdapBundle extends Bundle
 {
     public function boot()
     {
